@@ -1,0 +1,55 @@
+.contactBand {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-top: 36px;
+  }
+  
+  .contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .contactRow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .contactInfo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  
+    .infoItem {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 16px;
+      color: #333;
+  
+      svg {
+        color: #007bff;
+        font-size: 18px;
+      }
+    }
+  }
+  
+  .socialMedia {
+    display: flex;
+    gap: 15px;
+  
+    a {
+      color: #333;
+      font-size: 20px;
+      transition: color 0.3s;
+  
+      &:hover {
+        color: #007bff;
+      }
+    }
+  }
+  

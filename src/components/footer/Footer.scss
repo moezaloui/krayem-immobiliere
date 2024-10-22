@@ -1,0 +1,63 @@
+@import "../../responsive.scss";
+.footer{
+    .footerContent{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: flex-end;
+        padding: 1rem;
+        margin-top: 2rem;
+        @include md{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 1rem;
+        }
+        .about{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            max-width: 60%;
+            @include md{
+                max-width: 100%;
+            }
+            a{
+                font-weight: bold;
+                font-size: 20px;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                transition: all 0.4s ease;
+                &:hover {
+                    scale: 1.05;
+                }
+                img{
+                    width: 48px;
+                }
+                span{
+                    @include md{
+                        display: none;
+                    }
+                }
+            }
+            p{
+                color: #535353;
+            }
+        }
+
+        .links{
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            a{
+                list-style: circle;
+                font-weight: bold;
+            }
+        }
+    }
+    .rights{
+        text-align: center;
+        margin-top: 1rem;
+        padding-bottom: .5rem;
+        a{
+            font-weight: bold;
+        }
+    }
+}
